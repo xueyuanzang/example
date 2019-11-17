@@ -1,5 +1,6 @@
-FROM nginx AS build
-
-# Install tools required to build the project
-# We will need to run `docker build --no-cache .` to update those dependencies
-RUN apt-get install update -y
+# Use ubuntu as the base image
+FROM ubuntu 
+# Add author's name LABEL 
+maintainer="Jeeva S. Chelladhurai" 
+# Add the command to run at the start of container 
+CMD date
